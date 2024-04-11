@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-@Entity(name="STUDENT")
+@Entity(name="COURSE")
 @Data
 @NoArgsConstructor
 public class Course implements Serializable {
@@ -15,12 +15,12 @@ public class Course implements Serializable {
     @Column(name="ID")
     private Long Id;
 
-    @Column(name="CourseName")
+    @Column(name="COURSE_NAME")
     private String courseName;
 
-    @Column(name="CourseCode")
+    @Column(name="COURSE_CODE")
     private String courseCode;
 
-    @Column(name="CourseCredit")
+    @Column(name="COURSE_CREDIT")
     private String courseCredit;
 }
